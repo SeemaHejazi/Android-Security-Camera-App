@@ -16,7 +16,7 @@ Google that allows you to send notifications to both Android devices and iOS dev
 developer in the code implementation - in particular, the developer only needs to provide a few details to Firebase, including
 the device ID to address the particular device, and their Firebase API key.
 
-*Description of method of communication with the Cloud Service. *
+##*Description of method of communication with the Cloud Service. *
 
 The end data application makes use of the Firebase Cloud Messaging solution. The server side consists of the FCM connection 
 servers that are provided by Google, and the app server which we have implemented in our environment. In this system, the 
@@ -27,7 +27,7 @@ the previous token has been compromised, in which case it is regenerated and sto
 ReceivePushService class in which we chose to override the FirebaseMessagingService.onMessageReceived method, to perform 
 actions based on the received RemoteMessage object and extract the message data.
 
-*Description of communication protocol and capabilities *
+##*Description of communication protocol and capabilities *
 Our system uses the HTTP connection server protocol rather than the XMPP connection server protocol for the following reasons: 
 HTTP offers downstream messaging only, this means the messaging is one-directional, from the cloud to the device. The 
 application does not require any communication from the device back to the cloud, so the use of bi-directional message 
@@ -38,7 +38,7 @@ HTTP sends both JSON messages and Plain Text messages as HTTP POST, but multicas
 tokens is only supported in JSON message format. On the other hand, XMPP does not support Plain Text messages or multicast 
 downstream sending at all.
 
-*Description of any data processing done. *
+##*Description of any data processing done. *
 We chose to use a type-safe REST client called Retrofit by Square, which provides a framework for authenticating and 
 interacting with APIs, and sending and receiving HTTP-based network requests using OkHttp. Retrofit relies on OkHttp for the 
 network library and the Gson library to serialize and deserialize API-based responses. Our interface class, PhotoAPI, defines 
@@ -57,6 +57,7 @@ which allows it to be displayed in the application.
 Code snippets and example
 
 HTTP POST request sample: 
+```
 https://fcm.googleapis.com/fcm/send
 Content-Type:application/json
 Authorization:key=AIzaSyZ-1u...0GBYzPu7Udno5aA
@@ -99,3 +100,6 @@ Picasso.with(mContext).load(currImage.getImage()).error(R.drawable.star).into(vi
 //Setting text view title
 String takenOn = "Date of Photo: " + currImage.getCreated().substring(0,10) + " Time: " + currImage.getCreated().substring(14,19);
 viewHolder.textView.setText(takenOn);
+```
+
+
