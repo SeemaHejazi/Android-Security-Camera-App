@@ -7,6 +7,7 @@ sensor and webcam attached. As the rangefinder detects motion, the webcam will b
 The image data will then be sent to our cloud application from which our Android application will receive a push 
 notification notifying the user that a new entry was recorded and that the photo is available for them to view. 
 
+<img width="698" alt="screen shot 2018-09-12 at 8 28 59 pm" src="https://user-images.githubusercontent.com/10931672/45460317-9c7eba00-b6ca-11e8-8dc1-e8facaa967ea.png">
 
 Whenever a new photo model is created in the API, a notification will be sent to the android application associated with 
 the particular user that corresponds to the photographed event. Whenever the app is opened by the user, it will perform a 
@@ -110,6 +111,4 @@ ImageAdapter:
         String takenOn = "Date of Photo: " + currImage.getCreated().substring(0,10) + " Time: " + currImage.getCreated().substring(14,19);
         viewHolder.textView.setText(takenOn);
 ```
-
-<img width="698" alt="screen shot 2018-09-12 at 8 28 59 pm" src="https://user-images.githubusercontent.com/10931672/45460317-9c7eba00-b6ca-11e8-8dc1-e8facaa967ea.png">
 
