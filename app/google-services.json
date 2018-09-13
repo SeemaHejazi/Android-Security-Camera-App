@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "349203101922",
+    "firebase_url": "https://project2-48124.firebaseio.com",
+    "project_id": "project2-48124",
+    "storage_bucket": "project2-48124.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349203101922:android:f21f18dfb83fec44",
+        "android_client_info": {
+          "package_name": "ca.seemahejazi.photosecurity.project2v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349203101922-5v1j4uvf7hudgpvm8d0g60brnij8sa5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm7T5XqGXLxUu3BL-xNDSEj-A7Fjf8Tek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349203101922:android:ee48c0da009d314d",
+        "android_client_info": {
+          "package_name": "ca.seemahejazi.photosecurity.project2v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349203101922-5v1j4uvf7hudgpvm8d0g60brnij8sa5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAm7T5XqGXLxUu3BL-xNDSEj-A7Fjf8Tek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
