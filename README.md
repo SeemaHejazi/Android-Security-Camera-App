@@ -111,4 +111,5 @@ ImageAdapter:
         viewHolder.textView.setText(takenOn);
 ```
 
+<img width="698" alt="screen shot 2018-09-12 at 8 28 59 pm" src="https://user-images.githubusercontent.com/10931672/45460317-9c7eba00-b6ca-11e8-8dc1-e8facaa967ea.png">
 
